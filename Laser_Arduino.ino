@@ -7,7 +7,7 @@ int Laser_OFF = 0;
 int analog_value;
 
 void setup() {
-  // PWM (pin 9 & 10) frequency set to 31372.55 Hz (better control of linear increase in voltage on logic N-MOSFET to avoid jumps)
+  // PWM (pin 9 & 10) frequency set to 31372.55 Hz (better control of linear increase in voltage on logic N-MOSFET)
   TCCR1B = TCCR1B & B11111000 | B00000001;
   Serial.begin(9600);
   pinMode(led, OUTPUT);
